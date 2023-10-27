@@ -86,6 +86,7 @@ class RepositoryData {
     var stopLoading: (() -> Void)?
     var tableViewRepoArray : [RepositoriesModel]?
 
+    // My github access token
     let headers: HTTPHeaders = [
         "Authorization": "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"
     ]
