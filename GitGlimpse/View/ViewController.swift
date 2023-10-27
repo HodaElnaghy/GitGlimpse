@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     // MARK: - Variables
     var viewModel: RepoViewModel = RepoViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Repositories"
@@ -70,6 +71,7 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: - Actions
     @IBAction func TryAgainButtonPressed(_ sender: UIButton) {
         viewModel.repositoryDataInstance.getRepositories(url: "https://api.github.com/repositories")
     }
@@ -104,17 +106,20 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
+}
+// MARK: - UIScrollViewDelegate
+extension ViewController {
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
             if let indexPaths = repositoriesTableView.indexPathsForVisibleRows,
                let lastIndexPath = indexPaths.last,
                lastIndexPath.row == (viewModel.repositoryDataInstance.tableViewRepoArray?.count ?? 0) - 1 {
-                print("Last cell is displayed. Load more data.")
                 viewModel.repositoryDataInstance.page += 1
                 viewModel.repositoryDataInstance.loadMoreData()
             }
         }
-    
 }
+
 
 // MARK: - Table view Delegate
 extension ViewController: UICollectionViewDelegateFlowLayout, UITableViewDelegate {
@@ -123,10 +128,5 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UITableViewDelegat
     }
 }
 
-// MARK: - Functions
-extension ViewController {
-    
-    
-    
-    
-}
+
+

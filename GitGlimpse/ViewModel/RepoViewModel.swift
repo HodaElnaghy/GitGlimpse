@@ -36,6 +36,7 @@ class RepoViewModel {
             DispatchQueue.main.async {
                 (self.repositoryDataInstance.stopLoading?())
             }
+            print(repositoryDataInstance.repoArray?.count)
         }
     }
 
@@ -76,7 +77,7 @@ class RepositoryData {
     
     let realm = try! Realm()
     var page = 0
-    var per_page = 9
+    var per_page = 10
     var repoArray: [RepositoriesModel]?
     var onDataUpdate: (() -> Void)?
     var noInternetAlert: (() -> Void)?
@@ -111,13 +112,12 @@ class RepositoryData {
                     }
                     dispatchGroup.notify(queue: .main) { [self] in
                         self.repoArray = updatedRepos
+                        self.saveRepositoriesToRealm()
+                        self.loadMoreData()
+                        self.stopLoading?()
+                        self.onDataUpdate?()
                     }
-                    self.saveRepositoriesToRealm()
-                    self.getRepositoriesFromRealm()
                     
-                    self.loadMoreData()
-                    self.stopLoading?()
-                    self.onDataUpdate?()
                     
                 case .failure(let error):
                     DispatchQueue.main.async {
