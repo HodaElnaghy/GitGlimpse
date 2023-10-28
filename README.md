@@ -28,8 +28,8 @@ I implemented a bonus feature - pagination using Realm for an API that doesn't s
 ## UI
 <div style="display: inline-block;">
   <img src="noInternet.png" alt="No Internet" width="200" />
-  <img src="darkMode.png" alt="Dark Mode" width="220" />
-  <img src="lightMode.png" alt="Light Mode" width="210" />
+  <img src="darkMode.png" alt="Dark Mode" width="210" />
+  <img src="lightMode.png" alt="Light Mode" width="250" />
 </div>
 
 
