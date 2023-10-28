@@ -32,6 +32,11 @@ I implemented the bonus feature - pagination using Realm for an API that doesn't
   <img src="lightMode.png" alt="Light Mode" width="205" />
 </div>
 
+# Responsive UI
+<div style="display: inline-block;">
+  <img src="responsive1.png" alt="Responsivity1" width="200" />
+  <img src="responsive2.png" alt="Responsivity2" width="210" />
+</div>
 
 ## Credits
 
