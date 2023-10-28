@@ -8,7 +8,7 @@
 
 GitGlimpse is a mobile app that allows you to explore public GitHub repositories. It provides essential information about repositories, their owners, and supports both light and dark modes. It even checks for internet connectivity to keep you informed. 
 
-I implemented a bonus feature - pagination using Realm for an API that doesn't support it.
+I implemented the bonus feature - pagination using Realm for an API that doesn't support it.
 
 ## Features
 
