@@ -1,6 +1,6 @@
 # GitGlimpse
 
-<img src="logo.png" alt="GitHub Logo" width="40" />  GitGlimpse is a mobile app that allows you to explore public GitHub repositories. It provides essential information about repositories, their owners, and supports both light and dark modes. It even checks for internet connectivity to keep you informed. 
+<img src="logo.png" alt="GitHub Logo" width="80" />    GitGlimpse is a mobile app that allows you to explore public GitHub repositories. It provides essential information about repositories, their owners, and supports both light and dark modes. It even checks for internet connectivity to keep you informed. 
 
 I implemented a bonus feature - pagination using Realm for an API that doesn't support it.
 
@@ -20,6 +20,7 @@ I implemented a bonus feature - pagination using Realm for an API that doesn't s
 - Enhanced the UI to provide an engaging user experience.
 
 ## UI
+![Dark Mode](darkMode.png) ![Light Mode](lightMode.png) ![No Internet](noInternet.png)
 
 
 ## Credits
