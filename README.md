@@ -20,7 +20,11 @@ I implemented a bonus feature - pagination using Realm for an API that doesn't s
 - Enhanced the UI to provide an engaging user experience.
 
 ## UI
-![Dark Mode](darkMode.png) ![Light Mode](lightMode.png) ![No Internet](noInternet.png)
+<div style="display: inline-block;">
+  <img src="darkMode.png" alt="Dark Mode" width="200" />
+  <img src="lightMode.png" alt="Light Mode" width="200" />
+  <img src="noInternet.png" alt="No Internet" width="200" />
+</div>
 
 
 ## Credits
