@@ -1,6 +1,0 @@
-framework module Pods_GitGlimpse_GitGlimpseUITests {
-  umbrella header "Pods-GitGlimpse-GitGlimpseUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

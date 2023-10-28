@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2407802FAC6010F617162BB2 /* Pods_GitGlimpseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339EC56277FB397DD5A1E467 /* Pods_GitGlimpseTests.framework */; };
-		2AFDA63137E20F8FA9CA3785 /* Pods_GitGlimpse_GitGlimpseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABA216EBE3FF173F444E17F /* Pods_GitGlimpse_GitGlimpseUITests.framework */; };
-		4DAF4652A976A14EA595AD0F /* Pods_GitGlimpse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3651625382A6BC38B76F505 /* Pods_GitGlimpse.framework */; };
 		592D594E2AEC08310057A34A /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D594D2AEC08310057A34A /* RealmModel.swift */; };
+		596681AD2AED1F2F00DF9AA0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 596681AC2AED1F2F00DF9AA0 /* Kingfisher */; };
+		596681B02AED1FEC00DF9AA0 /* Connectivity in Frameworks */ = {isa = PBXBuildFile; productRef = 596681AF2AED1FEC00DF9AA0 /* Connectivity */; };
+		596681B32AED22D800DF9AA0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 596681B22AED22D800DF9AA0 /* Realm */; };
+		596681B52AED22D800DF9AA0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 596681B42AED22D800DF9AA0 /* RealmSwift */; };
+		596681B82AED246D00DF9AA0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 596681B72AED246D00DF9AA0 /* Alamofire */; };
 		5978C3882AEAA72A00321B6A /* UIView+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5978C3872AEAA72A00321B6A /* UIView+showAlert.swift */; };
 		59C9FC2A2AE930C4002DF785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9FC292AE930C4002DF785 /* AppDelegate.swift */; };
 		59C9FC2C2AE930C4002DF785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9FC2B2AE930C4002DF785 /* SceneDelegate.swift */; };
@@ -47,9 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01CEF3153081E773CB35269C /* Pods-GitGlimpseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitGlimpseTests.release.xcconfig"; path = "Target Support Files/Pods-GitGlimpseTests/Pods-GitGlimpseTests.release.xcconfig"; sourceTree = "<group>"; };
-		339EC56277FB397DD5A1E467 /* Pods_GitGlimpseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitGlimpseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49FDF13B1DB45D6EAF6DC162 /* Pods-GitGlimpse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitGlimpse.release.xcconfig"; path = "Target Support Files/Pods-GitGlimpse/Pods-GitGlimpse.release.xcconfig"; sourceTree = "<group>"; };
 		592D594D2AEC08310057A34A /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		5978C3872AEAA72A00321B6A /* UIView+showAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+showAlert.swift"; sourceTree = "<group>"; };
 		59C9FC262AE930C4002DF785 /* GitGlimpse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitGlimpse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,12 +70,6 @@
 		59C9FC5F2AE93BD3002DF785 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		59C9FC602AE93BD3002DF785 /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
 		59C9FC632AE9819A002DF785 /* UIView+dropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+dropShadow.swift"; sourceTree = "<group>"; };
-		5CCCB8DEDFCD9FAC78C5CF5F /* Pods-GitGlimpseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitGlimpseTests.debug.xcconfig"; path = "Target Support Files/Pods-GitGlimpseTests/Pods-GitGlimpseTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7FCE6CF716AA4657BC79D9DB /* Pods-GitGlimpse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitGlimpse.debug.xcconfig"; path = "Target Support Files/Pods-GitGlimpse/Pods-GitGlimpse.debug.xcconfig"; sourceTree = "<group>"; };
-		8D4AEFA25995AC6C939532D5 /* Pods-GitGlimpse-GitGlimpseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitGlimpse-GitGlimpseUITests.debug.xcconfig"; path = "Target Support Files/Pods-GitGlimpse-GitGlimpseUITests/Pods-GitGlimpse-GitGlimpseUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9ABA216EBE3FF173F444E17F /* Pods_GitGlimpse_GitGlimpseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitGlimpse_GitGlimpseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E241990491785CC34FFA391A /* Pods-GitGlimpse-GitGlimpseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitGlimpse-GitGlimpseUITests.release.xcconfig"; path = "Target Support Files/Pods-GitGlimpse-GitGlimpseUITests/Pods-GitGlimpse-GitGlimpseUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F3651625382A6BC38B76F505 /* Pods_GitGlimpse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitGlimpse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DAF4652A976A14EA595AD0F /* Pods_GitGlimpse.framework in Frameworks */,
+				596681B82AED246D00DF9AA0 /* Alamofire in Frameworks */,
+				596681B52AED22D800DF9AA0 /* RealmSwift in Frameworks */,
+				596681B32AED22D800DF9AA0 /* Realm in Frameworks */,
+				596681AD2AED1F2F00DF9AA0 /* Kingfisher in Frameworks */,
+				596681B02AED1FEC00DF9AA0 /* Connectivity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2407802FAC6010F617162BB2 /* Pods_GitGlimpseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,36 +96,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AFDA63137E20F8FA9CA3785 /* Pods_GitGlimpse_GitGlimpseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BB77DAFC1781859C2F3B234 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7FCE6CF716AA4657BC79D9DB /* Pods-GitGlimpse.debug.xcconfig */,
-				49FDF13B1DB45D6EAF6DC162 /* Pods-GitGlimpse.release.xcconfig */,
-				8D4AEFA25995AC6C939532D5 /* Pods-GitGlimpse-GitGlimpseUITests.debug.xcconfig */,
-				E241990491785CC34FFA391A /* Pods-GitGlimpse-GitGlimpseUITests.release.xcconfig */,
-				5CCCB8DEDFCD9FAC78C5CF5F /* Pods-GitGlimpseTests.debug.xcconfig */,
-				01CEF3153081E773CB35269C /* Pods-GitGlimpseTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		4AABE872D7F55801F4E5B1F2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F3651625382A6BC38B76F505 /* Pods_GitGlimpse.framework */,
-				9ABA216EBE3FF173F444E17F /* Pods_GitGlimpse_GitGlimpseUITests.framework */,
-				339EC56277FB397DD5A1E467 /* Pods_GitGlimpseTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		59C9FC1D2AE930C4002DF785 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +109,6 @@
 				59C9FC3F2AE930C5002DF785 /* GitGlimpseTests */,
 				59C9FC492AE930C5002DF785 /* GitGlimpseUITests */,
 				59C9FC272AE930C4002DF785 /* Products */,
-				1BB77DAFC1781859C2F3B234 /* Pods */,
-				4AABE872D7F55801F4E5B1F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,17 +224,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59C9FC502AE930C5002DF785 /* Build configuration list for PBXNativeTarget "GitGlimpse" */;
 			buildPhases = (
-				5F44C20D48ED86C457D057C4 /* [CP] Check Pods Manifest.lock */,
 				59C9FC222AE930C4002DF785 /* Sources */,
 				59C9FC232AE930C4002DF785 /* Frameworks */,
 				59C9FC242AE930C4002DF785 /* Resources */,
-				7013C175935496921BA07557 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GitGlimpse;
+			packageProductDependencies = (
+				596681AC2AED1F2F00DF9AA0 /* Kingfisher */,
+				596681AF2AED1FEC00DF9AA0 /* Connectivity */,
+				596681B22AED22D800DF9AA0 /* Realm */,
+				596681B42AED22D800DF9AA0 /* RealmSwift */,
+				596681B72AED246D00DF9AA0 /* Alamofire */,
+			);
 			productName = GitGlimpse;
 			productReference = 59C9FC262AE930C4002DF785 /* GitGlimpse.app */;
 			productType = "com.apple.product-type.application";
@@ -340,6 +315,12 @@
 				Base,
 			);
 			mainGroup = 59C9FC1D2AE930C4002DF785;
+			packageReferences = (
+				596681AB2AED1F2F00DF9AA0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				596681AE2AED1FEC00DF9AA0 /* XCRemoteSwiftPackageReference "Connectivity" */,
+				596681B12AED207D00DF9AA0 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				596681B62AED246D00DF9AA0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 59C9FC272AE930C4002DF785 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -402,28 +383,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F44C20D48ED86C457D057C4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GitGlimpse-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6C20585DD28F09802968FB34 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,23 +398,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitGlimpse-GitGlimpseUITests/Pods-GitGlimpse-GitGlimpseUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7013C175935496921BA07557 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GitGlimpse/Pods-GitGlimpse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GitGlimpse/Pods-GitGlimpse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitGlimpse/Pods-GitGlimpse-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A1345E291AE5B219538F0ABA /* [CP] Check Pods Manifest.lock */ = {
@@ -673,7 +615,6 @@
 		};
 		59C9FC512AE930C5002DF785 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FCE6CF716AA4657BC79D9DB /* Pods-GitGlimpse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -702,7 +643,6 @@
 		};
 		59C9FC522AE930C5002DF785 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49FDF13B1DB45D6EAF6DC162 /* Pods-GitGlimpse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -731,7 +671,6 @@
 		};
 		59C9FC542AE930C5002DF785 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CCCB8DEDFCD9FAC78C5CF5F /* Pods-GitGlimpseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,7 +690,6 @@
 		};
 		59C9FC552AE930C5002DF785 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CEF3153081E773CB35269C /* Pods-GitGlimpseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -771,7 +709,6 @@
 		};
 		59C9FC572AE930C5002DF785 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D4AEFA25995AC6C939532D5 /* Pods-GitGlimpse-GitGlimpseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -789,7 +726,6 @@
 		};
 		59C9FC582AE930C5002DF785 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E241990491785CC34FFA391A /* Pods-GitGlimpse-GitGlimpseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -845,6 +781,67 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		596681AB2AED1F2F00DF9AA0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+		596681AE2AED1FEC00DF9AA0 /* XCRemoteSwiftPackageReference "Connectivity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rwbutler/Connectivity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
+		596681B12AED207D00DF9AA0 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		596681B62AED246D00DF9AA0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		596681AC2AED1F2F00DF9AA0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 596681AB2AED1F2F00DF9AA0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		596681AF2AED1FEC00DF9AA0 /* Connectivity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 596681AE2AED1FEC00DF9AA0 /* XCRemoteSwiftPackageReference "Connectivity" */;
+			productName = Connectivity;
+		};
+		596681B22AED22D800DF9AA0 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Realm;
+		};
+		596681B42AED22D800DF9AA0 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealmSwift;
+		};
+		596681B72AED246D00DF9AA0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 596681B62AED246D00DF9AA0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59C9FC1E2AE930C4002DF785 /* Project object */;
 }

@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import RealmSwift
+import UIKit
 
 class RepoViewModel {
     
@@ -29,7 +30,7 @@ class RepoViewModel {
     init() {
         if repositoryDataInstance.getRepositoriesFromRealm().isEmpty {
             repositoryDataInstance.getRepositories(url: "https://api.github.com/repositories")
-            repositoryDataInstance.tableViewRepoArray = repositoryDataInstance.repoArray ?? []
+            repositoryDataInstance.tableViewRepoArray = repositoryDataInstance.repoArray 
         } else {
             repositoryDataInstance.repoArray = repositoryDataInstance.getRepositoriesFromRealm()
             repositoryDataInstance.loadMoreData()
@@ -53,17 +54,6 @@ class GithubDateFormatter {
             let components = calendar.dateComponents([.year, .month, .day], from: date, to: now)
             
             if let years = components.year, let months = components.month {
-                //                switch years {
-                //                case years < 1 :
-                //                    if months <6 {
-                //                        return monthFormatter.string(from: date)
-                //                    } else {
-                //                        return "\(months) month\(months > 1 ? "s" : "") ago"
-                //                    }
-                //                }
-                
-                
-                
                 if years < 1 && months < 6 {
                     let monthFormatter = DateFormatter()
                     monthFormatter.dateFormat = "EEEE, MMM d, yyyy"
@@ -94,9 +84,9 @@ class RepositoryData {
     var stopLoading: (() -> Void)?
     var tableViewRepoArray : [RepositoriesModel] = []
     
-    // My github access token
+    // Github access token
     let headers: HTTPHeaders = [
-        "Authorization": "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"
+        "Authorization": "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"
     ]
     
     func getRepositories(url: String) {
@@ -159,13 +149,14 @@ class RepositoryData {
     }
     
     func loadMoreData() {
-        
         let startIndex = page * perPage
-        let endIndex = startIndex + perPage - 1
-        if endIndex < repoArray.count {
-            tableViewRepoArray += Array(repoArray[startIndex...endIndex])
-            onDataUpdate?()
+        var endIndex = startIndex + perPage - 1
+        endIndex = min(endIndex, repoArray.count - 1)
+        if startIndex > endIndex {
+            return
         }
+        tableViewRepoArray += repoArray[startIndex...endIndex]
+        onDataUpdate?()
     }
     
     func saveRepositoriesToRealm() {
