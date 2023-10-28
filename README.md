@@ -1,4 +1,5 @@
 # GitGlimpse
+![GitHub Logo](logo.png)
 
 GitGlimpse is a mobile app that allows you to explore public GitHub repositories. It provides essential information about repositories, their owners, and supports both light and dark modes. It even checks for internet connectivity to keep you informed. 
 
