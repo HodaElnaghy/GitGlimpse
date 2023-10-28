@@ -8,22 +8,43 @@
 import Foundation
 
 struct RepositoryOwnerModel: Codable {
-    let id: Int?
-    let avatar_url: String?
+    let id: Int
+    let avatarURL: String?
     let login: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case avatarURL = "avatar_url"
+        case login
+    }
 }
 
 struct RepositoriesModel: Codable {
-    let id: Int?
+    let id: Int
     let name: String?
     let owner: RepositoryOwnerModel?
-    var created_at: String?
+    var createdAt: String?
     var language: String?
-    var forks_count: Int?
+    var forksCount: Int?
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case owner
+        case createdAt = "created_at"
+        case language
+        case forksCount = "forks_count"
+      }
 }
 
 struct RepositoryInfoModel: Codable {
-    var created_at: String?
+    var createdAt: String?
     var language: String?
-    var forks_count: Int?
+    var forksCount: Int?
+    
+    enum CodingKeys: String, CodingKey {
+        case createdAt = "created_at"
+        case language
+        case forksCount = "forks_count"
+    }
 }
+
