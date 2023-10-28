@@ -33,7 +33,7 @@ I implemented the bonus feature - pagination using Realm for an API that doesn't
 </div>
 
 <div style="display: inline-block;">
-  <img src="reponsive1" alt="Responsivity1" width="200" />
+  <img src="responsive1.png" alt="Responsivity1" width="210" />
   <img src="responsive2.png" alt="Responsivity2" width="210" />
 </div>
 
