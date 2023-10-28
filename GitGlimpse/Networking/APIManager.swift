@@ -59,12 +59,9 @@ class APIManager {
         if !SCNetworkReachabilityGetFlags(reachability, &flags) {
             return false
         }
-        
         let isReachable = flags.contains(.reachable)
         let needsConnection = flags.contains(.connectionRequired)
-        
         return isReachable && !needsConnection
     }
 
-    
 }
